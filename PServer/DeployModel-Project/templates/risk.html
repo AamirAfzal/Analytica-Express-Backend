@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    Risk Classifier
+
+    <form action="{% url 'riskresult' %}">
+
+
+      {% csrf_token %}
+      SoilPh <input type="text"required name="SoilPh" value="">
+      RelativeHumidity <input type="text"required name="RelativeHumidity" value="">
+      SoilTemperature <input type="text"required name="SoilTemperature" value="">
+
+<input type="submit" name="" value="submit">
+    </form>
+  </body>
+</html>
